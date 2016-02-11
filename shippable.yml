@@ -1,0 +1,30 @@
+# language setting
+language: python
+notifications:
+   email: false
+archive: true
+
+python:
+  - "3.4"
+
+before_script:
+  - cd /root/workspace/src/github.com/greenelab/DAPS_private
+
+script:
+  - which python
+  - nose2 --plugin nose2.plugins.junitxml --junit-xml test 
+  - mv nose2-junit.xml shippable/testresults/tests.xml
+  - jupyter nbconvert --to html ./visualize/Figures.ipynb
+  - cp Figures.html shippable/buildoutput/
+  - coverage run --branch test.py
+  - coverage xml -o shippable/codecoverage/coverage.xml test.py
+
+after_success:
+  - rm -rf .git
+  - git init
+  - git config user.email "brettbj@gmail.com"
+  - git config user.name "Brett Beaulieu-Jones"
+  - git remote add release git@github.com:greenelab/DAPS.git
+  - git add -f .
+  - git commit -m "build $BUILD_NUMBER commit $COMMIT"
+  - git push -fq release master

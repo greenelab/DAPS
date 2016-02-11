@@ -1,0 +1,904 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"file",
+				"file_name"
+			],
+			[
+				"read",
+				"read_from_dict"
+			],
+			[
+				"input",
+				"input_size"
+			],
+			[
+				"n",
+				"n_in"
+			],
+			[
+				"n_",
+				"n_out"
+			],
+			[
+				"config",
+				"configText"
+			],
+			[
+				"DB_",
+				"DB_NAME"
+			],
+			[
+				"pssm",
+				"pssm_file"
+			],
+			[
+				"seq",
+				"sequences"
+			],
+			[
+				"P_",
+				"P_Sm_R1"
+			],
+			[
+				"P_S",
+				"P_Sm"
+			],
+			[
+				"P_Sm",
+				"P_Sm_R1"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"sequ",
+				"sequence"
+			],
+			[
+				"se",
+				"seq_pos"
+			],
+			[
+				"pos",
+				"pos_score"
+			],
+			[
+				"mot",
+				"mot_pos"
+			],
+			[
+				"tota",
+				"total_ll"
+			],
+			[
+				"pss",
+				"pssm"
+			],
+			[
+				"motif",
+				"motif_scan"
+			],
+			[
+				"episodic",
+				"episodic_id"
+			],
+			[
+				"train",
+				"train_set_x"
+			],
+			[
+				"hidd",
+				"hidden_score"
+			],
+			[
+				"ge",
+				"genotypes"
+			],
+			[
+				"num",
+				"numpy"
+			],
+			[
+				"test",
+				"test_set_y"
+			],
+			[
+				"test_set",
+				"test_set_x_genotypes"
+			],
+			[
+				"phe",
+				"phenotypes"
+			],
+			[
+				"nump",
+				"numpy_rng"
+			],
+			[
+				"dat",
+				"datafile"
+			],
+			[
+				"data",
+				"datadir"
+			],
+			[
+				"spa",
+				"shape"
+			],
+			[
+				"traini",
+				"training_epochs"
+			],
+			[
+				"get",
+				"get_value"
+			],
+			[
+				"tra",
+				"train_set_x"
+			],
+			[
+				"row",
+				"row_count"
+			],
+			[
+				"x",
+				"x_test"
+			],
+			[
+				"y_",
+				"y_train"
+			],
+			[
+				"cla",
+				"classify"
+			],
+			[
+				"y",
+				"y_test"
+			],
+			[
+				"out",
+				"outfile"
+			],
+			[
+				"inde",
+				"index_array"
+			],
+			[
+				"snp",
+				"snp_array"
+			],
+			[
+				"de",
+				"delimiter"
+			],
+			[
+				"chr",
+				"chromNum"
+			],
+			[
+				"outf",
+				"out_file"
+			],
+			[
+				"cl",
+				"classes"
+			],
+			[
+				"no",
+				"normalized_fc"
+			],
+			[
+				"feat",
+				"feature_count"
+			],
+			[
+				"tr",
+				"train_set_x"
+			],
+			[
+				"we",
+				"weighted_hl"
+			],
+			[
+				"weigh",
+				"weight_rf"
+			],
+			[
+				"test_set_",
+				"test_set_y"
+			],
+			[
+				"trai",
+				"train_set_y"
+			],
+			[
+				"run",
+				"run_dA"
+			],
+			[
+				"pre",
+				"pre_rfc"
+			],
+			[
+				"case",
+				"case_percent_test"
+			],
+			[
+				"case_",
+				"case_percent_train"
+			],
+			[
+				"train_",
+				"train_set_x"
+			],
+			[
+				"diff",
+				"diff_squared"
+			],
+			[
+				"to",
+				"tolist"
+			],
+			[
+				"xt",
+				"xtc_diff_sum"
+			],
+			[
+				"xt_xtc",
+				"xt_xtc_class"
+			],
+			[
+				"xtc_d",
+				"xtc_diff_norm"
+			],
+			[
+				"xt_diff",
+				"xt_diff_norm"
+			],
+			[
+				"xtc_dif",
+				"xtc_diff_sum"
+			],
+			[
+				"xt_di",
+				"xt_diff_sum"
+			],
+			[
+				"x_al",
+				"x_all_diff_daCase"
+			],
+			[
+				"val",
+				"valid_indices"
+			],
+			[
+				"valid",
+				"valid_indicies"
+			],
+			[
+				"vali",
+				"valid_end"
+			],
+			[
+				"tst",
+				"test_size"
+			],
+			[
+				"load",
+				"load_data"
+			],
+			[
+				"la",
+				"layer"
+			],
+			[
+				"neg",
+				"negative_log_likelihood"
+			],
+			[
+				"c",
+				"csv_output"
+			],
+			[
+				"min",
+				"minor_alleles_locs"
+			],
+			[
+				"minor",
+				"minor_alleles_logs"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "classes/sim.py",
+			"settings":
+			{
+				"buffer_size": 1403,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "classes/da.py",
+			"settings":
+			{
+				"buffer_size": 4620,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "classes/da_test.py",
+			"settings":
+			{
+				"buffer_size": 363,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "2_da_structure_recon_cost/run.py",
+			"settings":
+			{
+				"buffer_size": 161,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "classes/sim_test.py",
+			"settings":
+			{
+				"buffer_size": 761,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 147.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Brett/Dropbox/Research/DAEHR",
+		"/Users/Brett/Dropbox/Research/DAEHR/1_simulation",
+		"/Users/Brett/Dropbox/Research/DAEHR/classes"
+	],
+	"file_history":
+	[
+		"/Users/Brett/Dropbox/Research/DAEHR/README.md",
+		"/Users/Brett/Dropbox/Research/DAEHR/1_simulation/1_simulation_notebook.ipynb",
+		"/Users/Brett/Dropbox/Research/DAEHR/DAEHR.sublime-project",
+		"/Users/Brett/Downloads/Title.md",
+		"/Users/Brett/Dropbox/Research/deeplearning/simulation/classes/sim.py",
+		"/Users/Brett/Dropbox/Research/deeplearning/GeneticAssociation/bladderCancer.txt",
+		"/Users/Brett/Dropbox/Research/deeplearning/simulation/classes/da.py",
+		"/Users/Brett/Dropbox/Research/Data/ALS/Full/PROACT_2013_08_12_DEATH-XLSX/PROACT_2013_08_12_DEATH_Dictionary.csv",
+		"/Users/Brett/Desktop/custom.js",
+		"/Users/Brett/.ipython/profile_default/sta",
+		"/Users/Brett/.ipython/profile_default/static/custom/custom.",
+		"/private/tmp/mysql.sock",
+		"/Users/Brett/Desktop/active_per_day.sql",
+		"/Users/Brett/Desktop/update_daily.sql",
+		"/Users/Brett/Desktop/med.txt",
+		"/Users/Brett/Downloads/wordpress.sql",
+		"/Users/Brett/Desktop/daily_activity.sql",
+		"/Users/Brett/Dropbox/GCB/537 Advanced Comp Bio/Project/Code/build_vcf.py",
+		"/Users/Brett/Downloads/v1.2_03c65f62a365c722c41d60a684b02170.tsv",
+		"/Users/Brett/Dropbox/GCB/537 Advanced Comp Bio/hw2/hw1.py",
+		"/Users/Brett/www/sos-web/deploy.sh",
+		"/Users/Brett/Dropbox/GCB/537 Advanced Comp Bio/hw1/ex1.labels",
+		"/Users/Brett/www/sos-web/index.php",
+		"/Users/Brett/ml/gwda/4-DaByChromosome/utils.py",
+		"/Users/Brett/ml/gwda/5-BuildHiddenLayer/load_data.py",
+		"/Users/Brett/ml/gwda/5-BuildHiddenLayer/load_phenotypes.py",
+		"/Users/Brett/ml/gwda/0A-TraditionalMethods/shallowClassifier.py",
+		"/Applications/MAMP/Library/lib/python2.7/tempfile.py",
+		"/Users/Brett/ml/gwda/5-BuildHiddenLayer/load_genotypes.py",
+		"/Users/Brett/ml/gwda/4-DaByChromosome/da.py",
+		"/Users/Brett/ml/gwda/5-BuildHiddenLayer/build_hidden_layer.py",
+		"/Users/Brett/ml/gwda/3-DataByChromosome/splitData.py",
+		"/Users/Brett/ml/gwda/2-SNPsByChromosome/splitter.py",
+		"/Users/Brett/ml/gwda/4-DaByChromosome/load_data.py",
+		"/Users/Brett/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Brett/www/wymsee/careers.html",
+		"/Users/Brett/www/wymsee/careers.",
+		"/Users/Brett/ml/gwda/4-DaByChromosome/logistic_sgd.py",
+		"/Users/Brett/Downloads/genes",
+		"/Users/Brett/Downloads/backstage (3).sql",
+		"/Users/Brett/ml/cluster/cluster.py",
+		"/Users/Brett/ml/bioinformatics_final/daBC.py",
+		"/Users/Brett/ml/Theano/dA.py",
+		"/Users/Brett/ml/bioinformatics_final/daSim.py",
+		"/Users/Brett/ml/bioinformatics_final/dA.py",
+		"/Users/Brett/ml/Theano/load_data.py",
+		"/Users/Brett/Desktop/mf602.json",
+		"/Users/Brett/ml/RBM/load_data.py",
+		"/Users/Brett/ml/localized_da/dA.py",
+		"/Users/Brett/ml/RBM/DBN.py",
+		"/Users/Brett/ml/gwas/da/progressivedA.py",
+		"/Users/Brett/ml/old_code/classes/load_data.py",
+		"/Users/Brett/ml/old_code/classes/da/dA.py",
+		"/Users/Brett/ml/noTheano/1_dA_bc.py",
+		"/Users/Brett/ml/noTheano/w_dA.py",
+		"/Users/Brett/ml/noTheano/cc_dA.py",
+		"/Users/Brett/ml/noTheano/dA.py",
+		"/Users/Brett/ml/old_code/classes/dA.pyc",
+		"/Users/Brett/ml/old_code/noTheano/dA.py",
+		"/Users/Brett/ml/old_code/noTheano/utils.py",
+		"/Users/Brett/ml/old_code/noTheano/SdA.py",
+		"/Users/Brett/ml/SDA_theano/logistic_sgd.py",
+		"/Users/Brett/ml/SDA_theano/load_data.py",
+		"/Users/Brett/ml/SDA_theano/utils.py",
+		"/Users/Brett/ml/SDA_theano/dA.py",
+		"/Users/Brett/ml/SDA_theano/SdA.py",
+		"/Users/Brett/ml/noTheano/SdA.py",
+		"/Users/Brett/ml/noTheano/HiddenLayer.py",
+		"/Users/Brett/ml/noTheano/LogisticRegression.py",
+		"/Users/Brett/ml/ld/sim/classes/shallowLearning.py",
+		"/Users/Brett/ml/ld/sim/SdA/convolutional_mlp.py",
+		"/Users/Brett/ml/noTheano/utils.py",
+		"/Users/Brett/ml/noTheano/load_data.py",
+		"/Users/Brett/ml/ld/sim/noTheano/SdA.py",
+		"/Users/Brett/ml/ld/sim/noTheano/mlp.py",
+		"/Users/Brett/ml/ld/sim/noTheano/load_data.py",
+		"/Users/Brett/ml/ld/sim/noTheano/dA.py",
+		"/Users/Brett/ml/ld/sim/noTheano/classifier.py",
+		"/Users/Brett/ml/ld/sim/results/10 -",
+		"/Users/Brett/ml/ld/sim/results/10_param_sweep.txt",
+		"/Users/Brett/ml/ld/sim/results/bc_param_sweep.txt",
+		"/Users/Brett/ml/ld/sim/classes/dA.py",
+		"/Users/Brett/ml/ld/sim/classes/load_data.py",
+		"/Users/Brett/ml/ld/sim/classes/classifier.py",
+		"/Users/Brett/ml/ld/classes/shallowLearning.py",
+		"/Users/Brett/ml/simulation/prob_gen.py",
+		"/Users/Brett/ml/simulation/readme.md",
+		"/Users/Brett/ml/simulation/choose_rare_variants.py",
+		"/Users/Brett/ml/simulation/random_gen.py",
+		"/Users/Brett/.bash_profile.macports-saved_2014-07-01_at_11:14:46",
+		"/Users/Brett/.theanorc",
+		"/Users/Brett/Documents/sos random/stats.sql",
+		"/usr/bin/sbl"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"numpy",
+			"model",
+			"WHITE BLOOD CELLS",
+			"URINALYSIS: PH",
+			"PH",
+			"SPECIFIC GRAVITY",
+			"ALK PHOS",
+			"ALT/SGPT",
+			"BILI TOTAL",
+			"CALCIUM",
+			"TOTAL PROTEIN",
+			"CREATININE",
+			"BUN",
+			"ANION GAP",
+			"CARBON DIOXIDE",
+			"CHLORIDE",
+			"POTASSIUM",
+			"SODIUM",
+			"MONOCYTES",
+			"PLATELET COUNT",
+			"RDW",
+			"MEAN CORPUSCULAR VOLUME",
+			"HEMOGLOBIN",
+			"RED BLOOD CELL COUNT",
+			"WHITE BLOOD CELL COUNT",
+			"RED BLOOD CELL COUNT",
+			"1A8791E3-A61C-455A-8DEE-763EB90C9B2C	1	URINALYSIS: RED BLOOD CELLS",
+			"1A8791E3-A61C-455A-8DEE-763EB90C9B2C",
+			"time",
+			"32M",
+			"32",
+			"30",
+			"2015-06-04",
+			"2015-05-28",
+			"nom",
+			"2015-05-29",
+			"YEAR(date_created) = 2015 AND MONTH(date_created) = 5 AND DAY(date_created) = 15",
+			"DAY(date_created) = 5",
+			"MONTH(date_created) = 4",
+			"2014",
+			"ch",
+			"P_R1_Sm",
+			"set",
+			"	",
+			"os",
+			"\n  ",
+			".",
+			"training_epoc",
+			"theano.shared",
+			"]",
+			"[",
+			"gparam",
+			"\"\"\"\n",
+			"sigmoid",
+			"load_data",
+			",",
+			"Output shapes",
+			"output",
+			"\n\n",
+			"x",
+			"0.0"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"2015-05-29",
+			"2015-06-04",
+			"2015-05-28",
+			"DATE(date_created) = '2015-05-29'",
+			"DAY(date_created) = 15",
+			"MONTH(date_created) = 5",
+			"2015",
+			"",
+			",",
+			"",
+			"\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "classes/sim.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								632,
+								632
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "classes/da.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4581,
+								4593
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "classes/da_test.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								314,
+								314
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "2_da_structure_recon_cost/run.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "classes/sim_test.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 761,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								703,
+								703
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "DAEHR.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sim_",
+				"classes/sim_test.py"
+			],
+			[
+				"re",
+				"README.md"
+			],
+			[
+				"sim",
+				"classes/sim.py"
+			],
+			[
+				"",
+				"README.md"
+			],
+			[
+				"configmain",
+				"config/main.php"
+			],
+			[
+				"svm",
+				"svm.py"
+			],
+			[
+				"rf",
+				"rfc.py"
+			],
+			[
+				"lo",
+				"load_data.py"
+			],
+			[
+				"da",
+				"dA.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
