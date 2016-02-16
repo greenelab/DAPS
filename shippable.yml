@@ -18,3 +18,10 @@ script:
   - cp Figures.html shippable/buildoutput/
   - coverage run --branch test.py
   - coverage xml -o shippable/codecoverage/coverage.xml test.py
+
+after_success:
+  - git checkout master
+  - git merge --no-ff staging
+  - git add -f .
+  - git commit -m "Successful build from $COMMIT [skip ci]"
+  - git push -fq release master
