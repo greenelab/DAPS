@@ -20,6 +20,8 @@ script:
   - coverage xml -o shippable/codecoverage/coverage.xml test.py
 
 after_success:
+  - git config user.email "brettbj@gmail.com"
+  - git config user.name "Brett Beaulieu-Jones"
   - git checkout master
   - git merge --no-ff staging
   - git add -f .
