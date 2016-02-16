@@ -24,4 +24,4 @@ after_success:
   - git merge --no-ff staging
   - git add -f .
   - git commit -m "Successful build from $COMMIT [skip ci]"
-  - git push -fq release master
+  - git push origin master
