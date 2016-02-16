@@ -8,7 +8,7 @@ python:
   - "3.4"
 
 before_script:
-  - cd /root/workspace/src/github.com/greenelab/DAPS_private
+  - cd /root/workspace/src/github.com/greenelab/DAPS
 
 script:
   - which python
@@ -20,11 +20,13 @@ script:
   - coverage xml -o shippable/codecoverage/coverage.xml test.py
 
 after_success:
-  - rm -rf .git
-  - git init
   - git config user.email "brettbj@gmail.com"
   - git config user.name "Brett Beaulieu-Jones"
-  - git remote add release git@github.com:greenelab/DAPS.git
+  - git config --global push.default simple
+  - git remote set-url origin git@github.com:greenelab/DAPS.git
+
+  - git checkout master
+  - git merge --no-ff staging
   - git add -f .
-  - git commit -m "build $BUILD_NUMBER commit $COMMIT"
-  - git push -fq release master
+  - git commit -m "Successful build from $COMMIT [skip ci]"
+  - ssh-agent bash -c "ssh-add ~/keys/id_${JOB_ID}; git push"

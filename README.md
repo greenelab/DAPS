@@ -2,6 +2,7 @@ Denoising Autoencoders for Phenotype Stratification (DAPS)
 ===============
 Denoising Autoencoder for Phenotype Stratification (DAPS) is a semi-supervised technique for exploring phenotypes in the Electronic Health Record (EHR).
 
+Upon build, figures are regenerated and saved in: https://github.com/greenelab/DAPS/blob/master/shippable/buildoutput/Figures.html
 
 
 ![](./images/cluster2.png)
@@ -15,7 +16,7 @@ Beaulieu-Jones, BK. and Greene, CS. "DAPS: Semi-Supervised Learning of the Elect
 INSTALL
 =======
 
-DAPS relies on several rapidly updating software packages. As such we include package information below, but we also have a docker build available at: @TODO
+DAPS relies on several rapidly updating software packages. As such we include package information below, but we also have a docker build available at: https://hub.docker.com/r/brettbj/daps/
  
 
 Required
@@ -44,6 +45,10 @@ Running Simulations
 If changing the number of patients per simulation, it is important to also change the size of minibatches to keep the same ratio. I.e. For 100,000 patients you could do 1,000 patient mini-batches (for speed of training, if kept at 100 it will train but slower), if 1,000 you should do 10 (it will not effectively train with a mini-batch size of 100)
 
 Below are a sampling of simulations run. Full parameter sweeps required > 72 hrs on an array of TitanX GPUs and it is recommended to choose an interesting subset.
+
+Data used to generate figures is available at: 
+
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.46082.svg)](http://dx.doi.org/10.5281/zenodo.46082)
 
 
 **Simulation Model 1:**
