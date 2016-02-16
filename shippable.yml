@@ -8,7 +8,7 @@ python:
   - "3.4"
 
 before_script:
-  - cd /root/workspace/src/github.com/greenelab/DAPS_private
+  - cd /root/workspace/src/github.com/greenelab/DAPS
 
 script:
   - which python
