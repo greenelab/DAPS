@@ -1,16 +1,8 @@
-# language setting
-language: python
-notifications:
-   email: false
-archive: true
-
-python:
-  - "3.4"
-
-before_script:
-  - cd /root/workspace/src/github.com/greenelab/DAPS
+install:
+  - curl -sLo - http://j.mp/install-travis-docker | sh -xe
 
 script:
+  - ./run 'docker build -t brettbj/daps-base . && docker run brettbj/daps-base echo Built Daps-base'
   - which python
   - nose2 --plugin nose2.plugins.junitxml --junit-xml test 
   - mv nose2-junit.xml shippable/testresults/tests.xml
