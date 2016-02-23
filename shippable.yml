@@ -29,5 +29,5 @@ after_success:
   - git checkout master
   - git merge --no-ff staging -Xtheirs
   - git add -f .
-  - git commit -m "Successful build from $COMMIT [skip ci]"
+  - git commit -m "Successful build from $COMMIT [skip ci] \"
   - ssh-agent bash -c "ssh-add ~/keys/id_${JOB_ID}; git push"
