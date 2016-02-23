@@ -30,4 +30,5 @@ after_success:
   - git merge --no-ff staging -Xtheirs
   - git add -f .
   - git commit -m "[skip ci] Successful build from $COMMIT" #don't rerun CI endless loop
+  - git status
   - ssh-agent bash -c "ssh-add ~/keys/id_${JOB_ID}; git push"
