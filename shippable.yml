@@ -24,11 +24,8 @@ after_success:
   - git config --global push.default simple
   - git remote set-url origin git@github.com:greenelab/DAPS.git
 
-  - git commit shippable/* -m "Tests"
+  - git commit shippable/* -m "[skip ci] Successful build from $COMMIT"
   - git stash
   - git checkout master
   - git merge --no-ff staging -Xtheirs
-  - git add -f .
-  - git commit -m "[skip ci] Successful build from $COMMIT" #don't rerun CI endless loop
-  - git status
   - ssh-agent bash -c "ssh-add ~/keys/id_${JOB_ID}; git push"
