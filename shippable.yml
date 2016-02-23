@@ -11,7 +11,6 @@ before_script:
   - cd /root/workspace/src/github.com/greenelab/DAPS
 
 script:
-  - which python
   - nose2 --plugin nose2.plugins.junitxml --junit-xml test 
   - mv nose2-junit.xml shippable/testresults/tests.xml
   - jupyter nbconvert --to html ./visualize/Figures.ipynb
@@ -25,8 +24,8 @@ after_success:
   - git config --global push.default simple
   - git remote set-url origin git@github.com:greenelab/DAPS.git
 
+  - git commit shippable/* -m "[skip ci] Successful build from $COMMIT"
+  - git stash
   - git checkout master
-  - git merge --no-ff staging
-  - git add -f .
-  - git commit -m "Successful build from $COMMIT [skip ci]"
+  - git merge --no-ff staging -Xtheirs
   - ssh-agent bash -c "ssh-add ~/keys/id_${JOB_ID}; git push"
