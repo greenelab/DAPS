@@ -25,7 +25,9 @@ after_success:
   - git config --global push.default simple
   - git remote set-url origin git@github.com:greenelab/DAPS.git
 
+  - git stash
   - git checkout master
+  - git stash apply
   - git merge --no-ff staging
   - git add -f .
   - git commit -m "Successful build from $COMMIT [skip ci]"
