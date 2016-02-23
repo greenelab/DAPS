@@ -24,7 +24,8 @@ after_success:
   - git config --global push.default simple
   - git remote set-url origin git@github.com:greenelab/DAPS.git
 
-  - git merge --no-ff master -Xours
+  - git commit shippable/* -m "Tests"
+  - git stash
   - git checkout master
   - git merge --no-ff staging
   - git add -f .
