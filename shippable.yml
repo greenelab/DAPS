@@ -13,7 +13,9 @@ before_script:
 script:
   - nose2 --plugin nose2.plugins.junitxml --junit-xml test 
   - mv nose2-junit.xml shippable/testresults/tests.xml
-  - jupyter nbconvert --to html ./visualize/Figures.ipynb
+  - curl https://zenodo.org/record/46607/files/data.zip -o data.zip
+  - unzip data.zip -d .
+  - jupyter nbconvert --to html --execute ./Figures.ipynb
   - cp Figures.html shippable/buildoutput/
   - coverage run --branch test.py
   - coverage xml -o shippable/codecoverage/coverage.xml test.py
