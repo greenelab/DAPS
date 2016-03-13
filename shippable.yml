@@ -36,6 +36,7 @@ after_success:
   - git stash
   - git checkout master
   - git merge --no-ff staging -Xtheirs
+  - git commit -a -m "[skip ci] Successful build from $COMMIT"
   - ssh-agent bash -c "ssh-add ~/keys/id_${JOB_ID}; git push"
 
 build:
