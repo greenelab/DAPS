@@ -46,10 +46,7 @@ after_success:
   - git checkout master
   - git merge --no-ff staging -Xtheirs
   - ssh-agent bash -c "ssh-add ~/keys/id_${JOB_ID}; git push"
-
-build:
-  post_ci:
-    - docker build -t brettbj/daps .
-    - docker push brettbj/daps:latest
-    - docker tag -f brettbj/daps:latest brettbj/$BUILD_NUMBER
-    - docker push brettbj/daps:$BUILD_NUMBER
+  - docker build -t brettbj/daps .
+  - docker push brettbj/daps:latest
+  - docker tag -f brettbj/daps:latest brettbj/$BUILD_NUMBER
+  - docker push brettbj/daps:$BUILD_NUMBER
