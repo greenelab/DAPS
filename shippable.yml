@@ -7,6 +7,12 @@ archive: true
 python:
   - "3.4"
 
+pre_ci_boot:
+    image_name: brettbj/daps-base
+    image_tag: latest
+    pull: true
+    options: "-e HOME=/root" 
+
 before_script:
   - cd /root/workspace/src/github.com/greenelab/DAPS
 
@@ -31,3 +37,10 @@ after_success:
   - git checkout master
   - git merge --no-ff staging -Xtheirs
   - ssh-agent bash -c "ssh-add ~/keys/id_${JOB_ID}; git push"
+
+build:
+  post_ci:
+    - docker build -t brettbj/daps .
+    - docker push brettbj/daps:latest
+    - docker tag -f brettbj/daps:latest brettbj/$BUILD_NUMBER
+    - docker push brettbj/daps:$BUILD_NUMBER
