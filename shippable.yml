@@ -11,6 +11,42 @@ branches:
   only:
     - staging
 
+build:
+  pre_ci_boot:
+      image_name: brettbj/daps-base
+      image_tag: latest
+      pull: true
+      options: "-e HOME=/root" 
+
+  ci:
+    - cd /root/workspace/src/github.com/greenelab/DAPS
+    - nose2 --plugin nose2.plugins.junitxml --junit-xml test 
+    - mv nose2-junit.xml shippable/testresults/tests.xml
+    - curl https://zenodo.org/record/46607/files/data.zip -o data.zip
+    - unzip data.zip -d .
+    - jupyter nbconvert --to html --execute ./Figures.ipynb
+    - cp Figures.html shippable/buildoutput/
+    - coverage run --branch test.py
+    - coverage xml -o shippable/codecoverage/coverage.xml test.py
+
+    - git config user.email "brettbj@gmail.com"
+    - git config user.name "Brett Beaulieu-Jones"
+    - git config --global push.default simple
+    - git remote set-url origin git@github.com:greenelab/DAPS.git
+
+    - git commit shippable/* Figures.html -m "[skip ci] Successful build from $COMMIT"
+    - git stash
+    - git checkout master
+    - git merge --no-ff staging -Xtheirs
+    - ssh-agent bash -c "ssh-add ~/keys/id_${JOB_ID}; git push"
+
+  build:
+    post_ci:
+      - docker build -t brettbj/daps .
+      - docker push brettbj/daps:latest
+      - docker tag -f brettbj/daps:latest brettbj/$BUILD_NUMBER
+      - docker push brettbj/daps:$BUILD_NUMBER
+  
 integrations:
   hub:
     - integrationName: brettbj/daps
@@ -19,41 +55,3 @@ integrations:
         only:
           - master
           - staging
-
-pre_ci_boot:
-    image_name: brettbj/daps-base
-    image_tag: latest
-    pull: true
-    options: "-e HOME=/root" 
-
-before_script:
-  - cd /root/workspace/src/github.com/greenelab/DAPS
-
-script:
-  - nose2 --plugin nose2.plugins.junitxml --junit-xml test 
-  - mv nose2-junit.xml shippable/testresults/tests.xml
-  - curl https://zenodo.org/record/46607/files/data.zip -o data.zip
-  - unzip data.zip -d .
-  - jupyter nbconvert --to html --execute ./Figures.ipynb
-  - cp Figures.html shippable/buildoutput/
-  - coverage run --branch test.py
-  - coverage xml -o shippable/codecoverage/coverage.xml test.py
-
-after_success:
-  - git config user.email "brettbj@gmail.com"
-  - git config user.name "Brett Beaulieu-Jones"
-  - git config --global push.default simple
-  - git remote set-url origin git@github.com:greenelab/DAPS.git
-
-  - git commit shippable/* Figures.html -m "[skip ci] Successful build from $COMMIT"
-  - git stash
-  - git checkout master
-  - git merge --no-ff staging -Xtheirs
-  - ssh-agent bash -c "ssh-add ~/keys/id_${JOB_ID}; git push"
-
-build:
-  post_ci:
-    - docker build -t brettbj/daps .
-    - docker push brettbj/daps:latest
-    - docker tag -f brettbj/daps:latest brettbj/$BUILD_NUMBER
-    - docker push brettbj/daps:$BUILD_NUMBER
