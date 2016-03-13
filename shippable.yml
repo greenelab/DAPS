@@ -7,6 +7,10 @@ archive: true
 python:
   - "3.4"
 
+branches:
+  only:
+    - staging
+
 integrations:
   hub:
     - integrationName: brettbj/daps
