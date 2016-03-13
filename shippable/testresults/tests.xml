@@ -1,5 +1,5 @@
-<testsuite errors="0" failures="0" name="nose2-junit" skipped="0" tests="1" time="29.441">
-  <testcase classname="test.SimTestMethods" name="testDaRun" time="29.440658">
+<testsuite errors="0" failures="0" name="nose2-junit" skipped="0" tests="1" time="27.750">
+  <testcase classname="test.SimTestMethods" name="testDaRun" time="27.749340">
     <system-err />
   </testcase>
 </testsuite>
