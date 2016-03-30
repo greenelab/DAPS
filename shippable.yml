@@ -19,7 +19,7 @@ build:
       options: "-e HOME=/root" 
 
   ci:
-    - cd /root/src/github.com/greenelab/daps
+    - cd /root/src/github.com/greenelab/DAPS
     - nose2 --plugin nose2.plugins.junitxml --junit-xml test 
     - mv nose2-junit.xml shippable/testresults/tests.xml
     - curl https://zenodo.org/record/46607/files/data.zip -o data.zip
