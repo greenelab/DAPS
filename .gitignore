@@ -19,3 +19,5 @@ htmlcov
 data
 Patients
 Scores
+__pycache__
+.ipynb_checkpoints
