@@ -13,6 +13,7 @@ import train_dAs as trainer
 
 from sklearn.cross_validation import StratifiedKFold
 from sklearn.metrics import roc_auc_score
+from sklearn.preprocessing import Imputer
 
 import classes.rfc as rfc
 import classes.svm as svm
@@ -28,7 +29,7 @@ def run(run_name='test', patient_counts=[100, 200, 500],
     # loop through patient files
     np.random.seed(seed=123)
     random.seed(123)
-  
+
     overall_time = time.time()
     i = 0
     path = './data/' + run_name + '/'
@@ -43,13 +44,18 @@ def run(run_name='test', patient_counts=[100, 200, 500],
                 patients = pkl.load(open(patients_path + '/' + file, 'rb'))
 
                 np.random.shuffle(patients)
+                X = patients[:, :-1]
+                y = patients[:, -1]
+
                 if d > 0:
-                    missing_vector = add_missing(patients, d)
+                    missing_vector = np.asarray(add_missing(patients, d))
+                    X = np.array(X)
+                    X[np.where(missing_vector == 0)] = 'NaN'
+                    imp = Imputer(strategy='mean', axis=0)
+                    X = imp.fit_transform(X)
                 else:
                     missing_vector = None
 
-                X = patients[:, :-1]
-                y = patients[:, -1]
                 print(sum(y), len(y))
 
                 dAs = {}

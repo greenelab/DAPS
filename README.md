@@ -7,9 +7,9 @@ Denoising Autoencoder for Phenotype Stratification (DAPS) is a semi-supervised
 technique for exploring phenotypes in the Electronic Health Record (EHR).
 
 Upon build, figures are regenerated and saved in:
-https://github.com/greenelab/DAPS/blob/master/shippable/buildoutput/Figures.html
+[Images](https://github.com/greenelab/DAPS/tree/master/images)
 
-![](<./images/cluster2.png>)
+![](<./images/cluster.png>)
 
 Controls and 2 artificial subtypes of cases were simulated from 2 different
 models. The labels are the number of hidden nodes in the trained DAs. Principal
@@ -138,13 +138,13 @@ We've included 3 ipython notebook files to help analyze the results.
 Selected Results
 ----------------
 
-![](<./images/fig2.png>)
+![](<./images/figure_3_patients_100.png>)![](<./images/figure_3_patients_200.png>)![](<./images/figure_3_patients_500.png>)![](<./images/figure_3_patients_1000.png>)![](<./images/figure_3_patients_2000.png>)
 
 Classification AUC in relation to the number of labeled patients under
 simulation model 1 (RF – Random Forest, NN – Nearest Neighbors, DA – 2-node DA +
 Random Forest, SVM – Support vector machine).
 
-![](<./images/fig5.png>)
+![](<./images/fig2.png>)
 
 Case vs. Control clustering via principal components analysis and t-distributed
 stochastic neighbor embedding throughout the training of the DA (raw input to
