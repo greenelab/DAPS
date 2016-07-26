@@ -22,7 +22,7 @@ build:
     - cd /root/src/github.com/greenelab/DAPS
     - nose2 --plugin nose2.plugins.junitxml --junit-xml test 
     - mv nose2-junit.xml shippable/testresults/tests.xml
-    - curl https://zenodo.org/record/46607/files/data.zip -o data.zip
+    - curl https://zenodo.org/record/58627/files/data.zip -o data.zip
     - unzip data.zip -d .
     - jupyter nbconvert --to html --execute ./Figures.ipynb
     - cp Figures.html shippable/buildoutput/
