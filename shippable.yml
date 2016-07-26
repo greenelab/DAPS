@@ -34,7 +34,7 @@ build:
     - git config --global push.default simple
     - git remote set-url origin git@github.com:greenelab/DAPS.git
 
-    - git commit shippable/* Figures.html -m "[skip ci] Successful build from $COMMIT"
+    - git commit shippable/* images/* Figures.html -m "[skip ci] Successful build from $COMMIT"
     - git stash
     - git checkout master
     - git merge --no-ff staging -Xtheirs
