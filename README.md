@@ -160,7 +160,7 @@ Acknowledgements
 ----------------
 
 This work is supported by the Commonwealth Universal Research Enhancement (CURE)
-Program gratn from the Pennsylvania Department of Health as well as the Gordon
+Program grant from the Pennsylvania Department of Health as well as the Gordon
 and Betty Moore Foundation's Data-Driven Discovery Initiative through Grant
 GBMF4552 to C.S.G.
 
